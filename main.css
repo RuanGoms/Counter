@@ -1,0 +1,126 @@
+/*
+===========
+FONT-FAMILY
+===========
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+===========
+Variables
+===========
+*/
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Open sans", sans-serif;
+  --clr-white: #f1f5f8;
+  --clr-mutano: #228237;
+  --clr-dark-mutano: #155222;
+  --clr-black: #222;
+  --spacing: 0.25rem;
+  --spacing-2: 0.35rem;
+  --radius: 0.5rem;
+  --shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  --text-light-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --text-shadow: 0 0 3px #222;
+  --transition: all 0.3s linear;
+}
+/*
+===========
+Global
+===========
+*/
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--ff-primary);
+  background: var(--clr-white);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family: var(--ff-primary);
+  letter-spacing: var(--spacing);
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+h2{
+  font-size: 4rem;
+}
+h1 {
+  font-size: 6rem;
+}
+/*
+===========
+Buttons
+===========
+*/
+.button-container {
+  text-align: center;
+  font-family: var(--ff-primary);
+  padding: 1rem;
+}
+.btn {
+  letter-spacing: var(--spacing-2);
+  font-family: var(--ff-primary);
+  background: transparent;
+  margin: 0.25rem;
+  padding: 0.45rem;
+  padding-right: 0.50rem;
+  padding-left: 0.50rem;
+  font-size: 0.80rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: var(--shadow)
+
+}
+.btn-hero {
+  border: 2px solid var(--clr-black);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.btn-hero:hover {
+  color: var(--clr-white);
+  background: var(--clr-mutano);
+}
+.btn-hero:active {
+  color: var(--clr-white);
+  background: var(--clr-dark-mutano);
+}
+
+/*
+===========
+Container
+===========
+*/
+main {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 3rem);
+}
+.container {
+  text-align: center;
+}
+.container h2{
+  background: var(--clr-white);
+  color: var(--clr-mutano);
+  padding: 1rem;
+  margin-bottom: 0rem;
+  text-shadow: var(--text-shadow);
+}
+.container h1{
+  color: var(--clr-black);
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  text-shadow: var(--text-light-shadow);
+}
