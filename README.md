@@ -1,2 +1,2 @@
 # Counter
-Exercício Javascript
+Exercício Javascript - Contador
