@@ -5,5 +5,5 @@ O exercício consiste em usar Javascript para fazer com que 3 botôes, ao clicar
 
 ## Preview
 <p align="center">
-  <img src"src/images/CounterGif.gif">
+  <img src="src/images/CounterGif.gif">
   </p>
