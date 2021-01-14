@@ -1,0 +1,2 @@
+# Counter
+Exercício Javascript
